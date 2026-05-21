@@ -139,7 +139,7 @@ function updateDashboardUI(user) {
 async function loadUserData() {
   const token = localStorage.getItem("token");
   if (!token) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -168,7 +168,7 @@ async function loadUserData() {
     }
   } catch (err) {
     localStorage.clear();
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 }
 /**

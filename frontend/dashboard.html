@@ -755,7 +755,7 @@
       document.addEventListener("DOMContentLoaded", async () => {
         const token = localStorage.getItem("token");
         if (!token) {
-          window.location.href = "login.html";
+          window.location.href = "index.html";
           return;
         }
 
@@ -830,7 +830,7 @@
         } catch (error) {
           console.error("Failed to load user data:", error);
           localStorage.clear();
-          window.location.href = "login.html";
+          window.location.href = "index.html";
         }
       });
 
@@ -970,7 +970,7 @@
             console.error("Logout error:", error);
           }
           localStorage.clear();
-          window.location.href = "login.html";
+          window.location.href = "index.html";
         });
 
       function applyBrightness(value) {
@@ -985,7 +985,7 @@
         sessionStorage.clear();
         localStorage.clear();
         stopBackgroundMusic();
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       }
     </script>
     <!-- Dashboard Socket.io Integration -->
