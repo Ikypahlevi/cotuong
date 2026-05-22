@@ -66,7 +66,7 @@ async function initializeDatabase() {
         gender ENUM('male','female','other') DEFAULT 'other',
         country VARCHAR(50),
         bio TEXT,
-        rank VARCHAR(50) DEFAULT 'Novice',
+        \`rank\` VARCHAR(50) DEFAULT 'Novice',
         rank_points INT DEFAULT 0,
         wins INT DEFAULT 0,
         losses INT DEFAULT 0,
