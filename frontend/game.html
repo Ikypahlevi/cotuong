@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no"
     />
     <title>Cờ Tướng Từ Thiện - Trò Chơi Cờ Tướng Online</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
       /* Đặt zoom mặc định 80% cho toàn trang */
       html {
@@ -70,7 +70,7 @@
   <body>
     <!-- Background Audio for moves -->
     <audio id="move-sound" preload="auto" autoplay loop muted>
-      <source src="../audio/play-music.mp3" type="audio/mpeg" />
+      <source src="assets/audio/play-music.mp3" type="audio/mpeg" />
     </audio>
 
     <div class="game-container">
@@ -80,7 +80,7 @@
         <div class="player-info opponent-info">
           <div class="player-header">
             <img
-              src="../assets/avatar-default.png"
+              src="assets/images/avatar-default.png"
               alt="Đối thủ"
               class="avatar"
             />
@@ -98,7 +98,7 @@
         <div class="player-info player-info-bottom">
           <div class="player-header">
             <img
-              src="../assets/avatar-default.png"
+              src="assets/images/avatar-default.png"
               alt="Người chơi"
               class="avatar"
             />
@@ -289,9 +289,9 @@
 
     <!-- Socket.io Client -->
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-    <script src="game-client.js"></script>
+    <script src="js/game-client.js"></script>
     <!-- Main Game Logic -->
-    <script src="game-ref.js"></script>
+    <script src="js/game-ref.js"></script>
     <script>
       (function () {
         // Lấy user từ sessionStorage (đã lưu khi matchFound)
